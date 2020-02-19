@@ -1,0 +1,53 @@
+
+2. 개발환경 구축 및 컴파일러
+
+    2-1. Browser , node.js
+
+        node.js
+            - Chrome`s V8 Javascript Engine 을 사용해서
+            - 자바스크립트를 해석 , OS레벨에서의 API를 제공하는 서버사이드용 자바스크립트 런타임 환경
+
+        Browser
+            - HTML을 동적으로 만들기 위해
+            - 브라우저에서 자바스크립트를 해석하고 DOM을 제어할 수 있도록 하는 자바스크립트 런타임 환경
+
+    2-2. node.js 모듈안에 typescript 컴파일러가 있다.
+
+
+
+    2-3 npm / Visual Studio Plugin
+
+        npm 
+            - npm i typescript -g
+            - node_modules/.bin/tsc
+            - tsc source.ts
+
+        Visual Studio Plugin
+            - Visual Studio 2017 /2015 update 3 에서는 디폴트로 설치되어있음
+
+
+    2-4 프로젝트 폴더 생성
+
+        1) mkdir 프로젝트폴더명
+
+        2) cd 프로젝트폴더명
+
+        3) npm init -y
+
+        4) npm i typescript        //   글로벌 설치시 >> npm i typescript -g
+
+
+
+        5) tsc -- init // 컴파일러 초기세팅
+
+            tsconfig.json 이 생성된다.
+            compile option들이 생김
+                target : es5 >> 컴파일된 버전 es5
+                module : commonJs >> 결과물이 어떤 모듈을 사용할것이냐.
+                
+            
+        6) tsc -w //    watch모드 ts파일 수정 변경시 자동 컴파일
+    
+
+
+        

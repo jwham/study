@@ -1,0 +1,18 @@
+
+    typescript란?
+
+    typescript = 언어
+
+    javascript와 호환
+
+    javascript의 슈퍼셋
+
+    typescript = Compiled Language , Transpile >> Meta 프로그래밍이라고도함
+    javascript = Interpreted Langeuage
+
+    javaScript > 오브젝트의 타입이 자유롭다.
+    typeScript > 타입체크를 중요시
+
+    Traditional Compiled Language
+        - typescript > 컴파일 > javascript
+        - typescript > 컴파일시 용량이 커진다. (헬퍼 함수들이 아래위로 생기기 떄문)

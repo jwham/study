@@ -1,0 +1,9 @@
+
+typscript 버전 변경시
+
+    - vscode 우측 하단 버전눌러서 변경 or 확인가능
+    - 버전변경시 modemodule folder 삭제후 다른버전으로 재설치
+      ex) npm i typescript@2.2.0
+
+
+      

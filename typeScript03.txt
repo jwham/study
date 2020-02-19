@@ -1,0 +1,51 @@
+
+
+IDE : 통합 개발 환경
+
+Integrated Development Environment
+    코딩 디버그 컴파일 배포등 프로그램 개발에 관련된 모든작업을 하나의 프로그램 안에서 처리하는 환경을 제공하는 소프트웨어
+    Visual Studio
+    Visual Studio Code - 타입스크립트로 만들어 져있어서 지원이 강력하다.
+
+    IntelliJ IDEA / WebStorm
+
+
+
+
+컴파일러 사용 예제
+
+    타입스크립트 글로벌 설치
+        - npm i typescript -g //글로벌 설치
+
+        cli 명령어로 파일 컴파일
+            - tsc test.ts   // 파일 하나 컴파일
+
+        특정 프로젝트 폴더에서 타입스크립트 컴파일러 설정에 맞춰 컴파일
+
+            - tsc --init   // 초기 세팅 (tsconfig.json 이 생성됨)
+            - tsc          // 컴파일
+
+        특정 프로젝트 폴더에서 타입스크립트 컴파일러 설정에 맞춰 컴파일
+
+            - tsc -w       // watch 모드
+            - ts파일 저장   // ts파일 변경시 자동 컴파일
+
+
+    프로젝트에 타입스크립트 컴파일러 설치 - npm i typescript // 프로젝트 폴더안에서 설치
+
+        .bin 안의 명령어로 파일 컴파일
+
+            - ./node_modules/.bin/tsc test.ts             // 한파일 컴파일
+
+        npm 스크립트로 파일 컴파일
+
+            - pageage.json 안에 있는 script 를 변경해서 실행
+              ex) npm run "script명"
+
+        프로젝트에 있는 타입스크립트 설정에 맞춰 npm 스크립트로 컴파일 
+            - tsconfig.json 생성 이후 (tsc --init)
+            - ./node_modules/.bin/tsc //실행
+
+        프로젝트에 있는 타입스크립트 설정에 맞춰 npm스크립트로 컴파일
+
+            - pageage.json 의 스크립트 부분에 watch 모드로 스크립트 변경후 npm 스크립트로 실행
